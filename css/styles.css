@@ -286,7 +286,7 @@ body {
 
 /* Наша команда */
 .team {
-  padding-top: 0;
+  /* padding-top: 0; */
 
   background-color: var(--section-two-color);
 }
