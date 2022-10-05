@@ -84,7 +84,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
-  outline: 2px solid teal;
+  /* outline: 2px solid teal; */
 }
 
 /* Шапка */
@@ -195,6 +195,7 @@ body {
 .hero {
   background-color: var(--additional-page-color);
   text-align: center;
+  /* замінити на фонове фото в 4 дз: */
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -237,7 +238,7 @@ body {
 
 /* Наші переваги */
 .advantages {
-  background-color: tomato;
+  /* background-color: tomato; */
 }
 
 .advantages-list {
@@ -272,7 +273,7 @@ body {
 .work {
   padding-top: 0;
 
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
 }
 
 .work-list {
@@ -328,11 +329,14 @@ body {
 .projects {
   padding-bottom: 114px;
 
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 .projects-title {
   margin-bottom: 4px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 20px;
 
   color: var(--title-text-color);
 
@@ -341,10 +345,27 @@ body {
   letter-spacing: 0.06em;
 }
 
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
 .projects-text {
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
+}
+
+.projects-list-item {
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 .project-image {
@@ -392,6 +413,14 @@ body {
 }
 
 /* Button */
+.button-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+
+  margin-bottom: 50px;
+}
+
 .projects-button {
   padding: 6px 22px;
   border: none;
