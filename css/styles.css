@@ -44,6 +44,8 @@ ul {
 }
 
 img {
+  max-width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -80,6 +82,19 @@ body {
   letter-spacing: 0.03em;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -91,10 +106,13 @@ body {
 
 /* Шапка */
 
+.main-header {
+  border-bottom: var(--line-header-color) solid 1px;
+}
+
 .main-nav {
   display: flex;
   align-items: baseline;
-  border-bottom: var(--line-header-color) solid 1px;
 }
 
 .nav-links {
@@ -118,7 +136,11 @@ body {
   font-style: normal;
 }
 
-.logo-footer {
+.footer .logo {
+  margin-right: 0px;
+}
+
+/* .logo-footer {
   color: var(--logo-text-color-black);
 
   font-family: "Raleway", sans-serif;
@@ -128,7 +150,7 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
   font-style: normal;
-}
+} */
 
 .logo-color-blue {
   color: var(--logo-text-color-blue);
@@ -300,10 +322,11 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background-color: var(--additional-text-color);
 }
 
 .team-title {
-  margin-top: 30px;
+  /* margin-top: 30px; */
   margin-bottom: 10px;
   color: var(--title-text-color);
 
@@ -315,7 +338,7 @@ body {
 }
 
 .team-text {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 
   font-size: 16px;
   line-height: 1.19;
@@ -323,13 +346,17 @@ body {
   letter-spacing: 0.03em;
 }
 
+.team-bottom-part {
+  padding: 30px;
+}
+
 /* ----------------ПОРТФОЛІО (початок)---------- */
 
-.projects {
-  padding-bottom: 114px;
+/* .projects {
+  padding-bottom: 114px; */
 
-  /* background-color: yellow; */
-}
+/* background-color: yellow; */
+/* } */
 
 .projects-title {
   margin-bottom: 4px;
@@ -445,9 +472,13 @@ body {
   background-color: var(--additional-page-color);
 }
 
+.address-list {
+  margin-top: 20px;
+}
+
 .address {
   display: block;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 
   color: var(--additional-text-color);
 
@@ -464,9 +495,13 @@ body {
   color: var(--logo-text-color-blue);
 }
 
+.contact-details {
+  margin-top: 9px;
+}
+
 .contact-details-link {
   display: block;
-  margin-top: 9px;
+  /* margin-top: 9px; */
 
   color: var(--contact-details-color);
 
